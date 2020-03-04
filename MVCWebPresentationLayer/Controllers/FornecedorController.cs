@@ -18,6 +18,8 @@ namespace MVCWebPresentationLayer.Controllers
         // GET: Fornecedor
         public ActionResult Index()
         {
+
+
             return View();
         }
 
