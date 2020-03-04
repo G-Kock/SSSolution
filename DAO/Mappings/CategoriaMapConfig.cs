@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAO.Mappings
 {
-    class CategoriaMapConfig : EntityTypeConfiguration<CategoriaDTO>
+    internal class CategoriaMapConfig : EntityTypeConfiguration<CategoriaDTO>
     {
         public CategoriaMapConfig()
         {
