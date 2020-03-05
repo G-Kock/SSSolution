@@ -69,10 +69,8 @@ namespace MVCWebPresentationLayer.Controllers
             try
             {
                 ClienteService svc = new ClienteService();
-                
                 //Este objeto "clientes" é uma Lista de objetos DTO
                 List<ClienteDTO> clientes = await svc.GetData();
-
                 var configuration = new MapperConfiguration(cfg =>
                 {
                     cfg.CreateMap<ClienteDTO, ClienteQueryViewModel>();
