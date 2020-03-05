@@ -5,14 +5,17 @@ using DTO;
 using MVCWebPresentationLayer.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
 namespace MVCWebPresentationLayer.Controllers
 {
-    public class ClienteController : Controller
+    public class ClienteController : BaseController
     {
         //Os Métodos Http mais populares são GET e POST.
         //Por padrão, todo hiperlink ou url digitada manualmente, efetuará uma chamada
